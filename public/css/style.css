@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(235, 239, 243);
+}
+
+.container {
+    max-width: 500px;
+    background-color: white;
+    padding: 2em;
+    border-radius: 4px;
+    box-shadow: 2px 4px 30px -3px #C9D3DF;
+    text-align: center;
+}
+
+.alert {
+    text-align: center;
+}
+
+#nom {
+    color: black;
+    font-size: 19px;
+}
+
+#nom2passage {
+    display: none;
+}
+
+body>div>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form>button {
+    width: 100px;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WeatherController!{% endblock %}
+
+{% block stylesheets %}
+    
+{% endblock stylesheets %}
+
+{% block body %}
+    {% for message in app.flashes('erreur') %}
+        <div class="alert alert-warning" role="alert">
+            Nous avons pas pu trouver l'endroit indiqué !!
+        </div>
+    {% endfor %}
+    <div class="main">
+        <h1 class="display-4">Bienvenue sur la page Météo</h1>
+        <div class="container">
+            {{ form(form) }}
+        </div>
+    </div>
+
+{% endblock %}
