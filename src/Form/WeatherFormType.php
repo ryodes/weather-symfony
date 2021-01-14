@@ -14,7 +14,9 @@ class WeatherFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nom', TextType::class)
+            ->add('nom', TextType::class, [
+                'attr' => ['placeholder' => 'Ex: 2 chemin louis auriacombe, 31100 toulouse']
+            ])
             ->add('type', ChoiceType::class, [
                 'choices' => [
                     'Rue' => 'rue',
